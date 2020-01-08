@@ -3,9 +3,15 @@
 <title>Agenda</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/styles/style.css">
+<link rel="stylesheet" href="/styles/agendastyle.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="scripts/jquery.lettering-0.6.1.min.js"></script>
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
@@ -80,9 +86,84 @@ body, html {
   </div>
 </div>
 
+<!-- Container space for agenda -->
+<!-- <div class="w3-content w3-container w3-padding-64" id="about"> -->
+  <div class='center-dial'>
+    <h1 class='center-preview'>HELLO</h1>
+    <div class='head'></div>
+    <div class='torso'></div>
+    <div class='hand-container' id='minutes'>
+      <div class='minute-hand'></div>
+    </div>
+    <div class='hand-container' id='hours'>
+      <div class='hour-hand'></div>
+    </div>
+    <div class='hand-container' id='seconds'>
+      <div class='second-hand'></div>
+    </div>
+  </div>
+  <div class='day-name-dial'>
+    <div class='ring-back'></div>
+    <div class='ring' id='r1'>
+      <h1 class='day-name-preview'>DAY NAME</h1>
+      <h2 class='day-name-text'>MON TUE WED THU FRI SAT SUN</h2>
+    </div>
+  </div>
+  <div class='month-dial'>
+    <div class='ring-back'></div>
+    <div class='ring' id='r2'>
+      <h1 class='month-preview'>MONTH</h1>
+      <h2 class='month-text'>JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC</h2>
+    </div>
+  </div>
+  <div class='day-dial'>
+    <div class='ring-back'></div>
+    <div class='ring' id='r3'>
+      <h1 class='day-preview'>DAY</h1>
+      <h2 class='day-text'>01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31</h2>
+    </div>
+  </div>
+  <div class='side-ring' id='weather'>
+    <div class='fa fa-cloud'></div>
+    <p class='temperature'>14&#176C</p>
+  </div>
+  <div class='side-ring' id='steps'>
+    <div class='bars'>
+      <div class='bar'>
+        <div class='day-letter'>M</div>
+        <div class='x' id='x1'></div>
+      </div>
+      <div class='bar'>
+        <div class='day-letter'>T</div>
+        <div class='x' id='x2'></div>
+      </div>
+      <div class='bar'>
+        <div class='day-letter'>W</div>
+        <div class='x' id='x3'></div>
+      </div>
+      <div class='bar'>
+        <div class='day-letter'>T</div>
+        <div class='x' id='x4'></div>
+      </div>
+      <div class='bar'>
+        <div class='day-letter'>F</div>
+        <div class='x' id='x5'></div>
+      </div>
+      <div class='bar'>
+        <div class='day-letter'>S</div>
+        <div class='x' id='x6'></div>
+      </div>
+      <div class='bar'>
+        <div class='day-letter'>S</div>
+        <div class='x' id='x7'></div>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
+
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <a href="https://www.facebook.com/HogeschoolUtrecht/" target="_blank"
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -100,7 +181,8 @@ body, html {
     <i class="fa fa-linkedin w3-hover-opacity"></i>
     </a>
   </div>
- 
+
+<!-- Navbar animation elements -->
 <script>
 // Modal Image Gallery
 function onClick(element) {
@@ -131,6 +213,9 @@ function toggleFunction() {
     }
 }
 </script>
+
+<!-- Agenda Script -->
+<script src="scripts/functions.js"></script>
 
 </body>
 </html>
