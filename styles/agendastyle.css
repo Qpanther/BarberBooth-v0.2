@@ -97,7 +97,7 @@
   
   html,
   body {
-    background: #292929;
+    /* background: #292929; */
     border: 0;
     font-family: 'Roboto Mono', monospace;
     height: 100%;
@@ -106,15 +106,18 @@
   }
   
   h1 {
-    color: #555;
+    color: #bababa;
     font-size: 25px;
   }
   
   h2 {
-    color: #555;
+    color: #bababa;
     font-size: 15px;
   }
   
+  .w3-display-container-dark{background-color: #292929}
+
+
   .center-dial {
     position: absolute;
     top: calc(50% - 75px);
@@ -1781,7 +1784,7 @@
   .day-letter {
     position: relative;
     top: 110px;
-    color: #555;
+    color: #bababa;
     font-size: 18px;
     text-align: center;
   }
